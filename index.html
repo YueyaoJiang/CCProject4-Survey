@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Game Quiz</h1>
+
+  
+  <div class="progress-bar">
+ <div id="progress-fill">1 / 9</div>
+  </div>
+
+
+  <div id="start-screen">
+ <h2>Welcome to Game Quiz</h2>
+ <p>Click the button below to begin.</p>
+<button id="startBtn">Start Quiz</button>
+  </div>
+
+  
+  <form id="quizForm" style="display: none;">
+<div class="question">
+    <label>1. What is your age?</label>
+    <select name="age" required>
+        <option value="">-- Select --</option>
+        <option value="1–13">1–13</option>
+        <option value="14–17">14–17</option>
+        <option value="18–23">18–23</option>
+        <option value="24–30">24–30</option>
+        <option value="30+">30+</option>
+      </select>
+    </div>
+
+    <div class="question">
+    <label>2. What types of games do you usually enjoy playing? (mutiple choice)</label><br>
+      <input type="checkbox" name="types" value="Action"> Action<br>
+      <input type="checkbox" name="types" value="Adventure"> Adventure<br>
+      <input type="checkbox" name="types" value="RPG"> RPG<br>
+      <input type="checkbox" name="types" value="Strategy"> Strategy<br>
+      <input type="checkbox" name="types" value="Shooter"> Shooter<br>
+      <input type="checkbox" name="types" value="Open World"> Open World<br>
+      <input type="checkbox" name="types" value="Horror"> Horror<br>
+      <input type="checkbox" name="types" value="Puzzle"> Puzzle<br>
+      <input type="checkbox" name="types" value="Survival"> Survival<br>
+      <input type="checkbox" name="types" value="Visual Novel"> Visual Novel<br>
+      <input type="checkbox" name="types" value="MOBA"> MOBA<br>
+      <input type="checkbox" name="types" value="MMORPG"> MMORPG<br>
+      <input type="checkbox" name="types" value="Card"> Card Games<br>
+      <input type="checkbox" name="types" value="Party"> Party Games<br>
+    </div>
+
+    <div class="question">
+    <label>3. How often do you usually play games?</label><br>
+      <input type="radio" name="frequency" value="Every day"> Every day<br>
+      <input type="radio" name="frequency" value="A few times a week"> A few times a week<br>
+      <input type="radio" name="frequency" value="Occasionally"> Occasionally<br>
+      <input type="radio" name="frequency" value="Rarely"> Rarely<br>
+    </div>
+
+    <div class="question">
+    <label>4. On average, how long is each of your gaming sessions?</label><br>
+      <input type="radio" name="sessionLength" value="Less than 30 minutes"> Less than 30 minutes<br>
+      <input type="radio" name="sessionLength" value="30 minutes – 1 hour"> 30 minutes – 1 hour<br>
+      <input type="radio" name="sessionLength" value="1 – 3 hours"> 1 – 3 hours<br>
+      <input type="radio" name="sessionLength" value="More than 3 hours"> More than 3 hours<br>
+    </div>
+
+    <div class="question">
+    <label>5. What platform do you use most frequently for gaming?</label><br>
+      <input type="radio" name="platform" value="PC"> PC<br>
+      <input type="radio" name="platform" value="Console"> Console (PS5 / Switch / Xbox)<br>
+      <input type="radio" name="platform" value="Mobile"> Mobile / Tablet<br>
+      <input type="radio" name="platform" value="Cloud"> Cloud Gaming Platform<br>
+      <input type="radio" name="platform" value="Other"> Other<br>
+    </div>
+
+    <div class="question">
+      <label>6. Do you usually play games:</label><br>
+      <input type="radio" name="playStyle" value="Alone"> Alone<br>
+      <input type="radio" name="playStyle" value="Friends (in person)"> With friends (in person)<br>
+      <input type="radio" name="playStyle" value="Friends (online)"> With friends (online)<br>
+      <input type="radio" name="playStyle" value="Strangers"> With strangers in multiplayer<br>
+    </div>
+
+    <div class="question">
+    <label>7. What do you care about most when playing games?</label><br>
+      <input type="radio" name="priority" value="Story"> Story and emotional experience<br>
+      <input type="radio" name="priority" value="Achievements"> Achievements and rankings<br>
+      <input type="radio" name="priority" value="Collecting"> Collecting resources / completing goals<br>
+      <input type="radio" name="priority" value="Social"> Social interaction and teamwork<br>
+    </div>
+
+    <div class="question">
+    <label>8. Has gaming affected your study/work?</label><br>
+      <input type="radio" name="impact" value="Positive"> Positively – helps me relax<br>
+      <input type="radio" name="impact" value="Procrastinate"> Somewhat – I tend to procrastinate<br>
+      <input type="radio" name="impact" value="Negative"> Negatively – it seriously affects me<br>
+      <input type="radio" name="impact" value="None"> Not at all<br>
+    </div>
+
+    <div class="question">
+    <label>9. What is your favorite game?</label>
+      <input type="text" name="favoriteGame">
+    </div>
+
+    <button type="button" id="nextBtn">Next</button>
+    <button type="submit" id="submitBtn" style="display: none;">Submit</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
